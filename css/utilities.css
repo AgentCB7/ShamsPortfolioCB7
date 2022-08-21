@@ -1,0 +1,85 @@
+.flex1
+{
+    display:flex;
+}
+
+.flex2
+{
+    flex:10;
+}
+
+.center
+{
+    align-items: center;
+}
+
+.justify
+{
+    justify-content: space-between;
+}
+
+.justify-center
+{
+    justify-content: center;
+}
+
+.button
+{
+    padding:1rem 2.5rem;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border:2px solid transparent;
+    outline:none;
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+
+.mod1
+{
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+}
+
+.mod2
+{
+    background-image: url(/images/buttonbg.jpg);
+    border-color:white;
+    border-radius:10px;
+    color:white;
+}
+
+.mod3
+{
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    transition: all 0.3s ease-in-out;
+}
+
+.mod1:hover
+{
+    background-color: rgba(255, 165, 0, 0.932);
+    border-color: black;
+    color:black;
+}
+
+
+.mod2:hover
+{
+    background-color: white;
+    color:orange;
+
+}
+
+.mod3:hover
+{
+    background-color: orange;
+    color:black;
+}
+
+.mod3 a:hover
+{
+    color:black;
+}

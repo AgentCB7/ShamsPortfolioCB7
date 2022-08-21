@@ -1,0 +1,968 @@
+@import 'utilities.css';
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Tahoma, sans-serif;
+}
+
+body
+{
+    background-image: url(/images/background-static.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+header
+{
+    background-image: url(/images/background.png);
+    clip-path: polygon(0 0,100% 0,100% 90%, 50% 100%,0 90%);
+}
+
+header nav 
+{
+    padding:0.5vw 0;
+}
+
+header nav .logo
+{
+    margin-right:2rem;
+}
+
+header nav .left a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right:2rem;
+    transition: all 0.5s ease;
+}
+
+header nav .left a:hover
+{
+    color:aqua;
+}
+
+header .right button a
+{
+    text-decoration: none;
+    color:aqua;
+}
+
+.container
+{
+    max-width:1300px;
+    padding:0 10px;
+    margin: 0 auto; 
+}
+
+.logo img
+{
+    width:5rem;
+}
+
+.intro
+{
+    margin-top:4rem;
+}
+
+.intro .left img
+{
+    width:550px;
+    margin-bottom:200px;
+}
+
+.intro .right
+{
+    margin-top:-200px;
+    color:white;
+    margin-left:3rem;
+}
+
+.intro .right h5
+{
+    font-size: 1.5rem;
+    color:aqua;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.intro .right h1
+{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.intro .right h1 span
+{
+    color:aqua;
+}
+
+.intro .right p
+{
+    line-height:1.5rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.container2
+{
+    max-width:1200px;
+    padding:0 10px;
+    margin: 0 auto; 
+}
+
+.about
+{
+    padding: 6rem 0;
+    margin-top:150px;
+    margin-bottom:70px;
+}
+
+.about .flex2
+{
+    margin-right:100px;
+}
+
+.about a img
+{
+    width:30px;
+}
+
+.aboutimg
+{
+    height:400px;
+    margin-left:100px;
+    border-radius: 10px;
+}
+
+.about h1
+{
+    margin-bottom:1rem;
+    font-size:2rem;
+    font-weight: 500;
+    color:wheat;
+}
+
+.about h1 span
+{
+    color:aqua;
+}
+
+.about h3
+{
+    font-size:1rem;
+    margin-bottom:1rem;
+    color:wheat
+}
+
+.about p
+{
+    text-align: justify;
+    color:rgb(181, 181, 181);
+    line-height:1.5;
+    margin-bottom:2rem;
+}
+
+.socials
+{
+    display:flex;
+}
+
+.socials a
+{
+    margin-right:0.5rem;
+}
+
+.works
+{
+    background-image: url(/images/workbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 100%, 50% 100%,0 100%);
+}
+
+.WorkHeading
+{
+    font-size: 2rem;
+    font-weight: 500;
+    color:white;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1rem;
+}
+
+.WorkHeading +p
+{
+    color:white;
+    margin-bottom:5rem;
+    text-align: center;
+}
+
+.WorkHeading span
+{
+    color:cyan;
+}
+
+.works .wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    margin-bottom:100px;
+}
+
+.works .wrapper h2
+{
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom:1rem;
+}
+
+.works .wrapper p
+{
+    margin-top:1rem;
+}
+
+.works .wrapper .card1
+{
+    background-color: white;
+    padding:4rem 2rem;
+    position:relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.works .wrapper .card1:hover
+{
+    background-color:orangered;
+    color:white;
+}
+
+.works .wrapper .card1 img
+{
+    position: absolute;
+    width:200px;
+    top: -1.7rem;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.works .wrapper .card2
+{
+    background-color: white;
+    padding:4rem 2rem;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.works .wrapper .card2:hover
+{
+    background-color:rgb(0, 179, 255);
+    color:white;
+}
+
+.works .wrapper .card2 img
+{
+    position:absolute;
+    width:75px;
+    top: -2.3rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.works .wrapper .card3
+{
+    background-color: white;
+    padding:4rem 2rem;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.works .wrapper .card3:hover
+{
+    background-color:goldenrod;
+    color:white;
+}
+
+.works .wrapper .card3 img
+{
+    position:absolute;
+    width:180px;
+    top: -2rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.subscriptions
+{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.subscriptions h1
+{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color:wheat;
+}
+
+.subscriptions .wrapper .tier1 h1
+{
+    font-size: 3rem;
+    color:rgb(49, 49, 49)
+}
+
+.subscriptions .wrapper .tier2 h1
+{
+    font-size: 3rem;
+    color:goldenrod;
+}
+
+.subscriptions .wrapper .tier1 p
+{
+    text-align: left;
+    color:black;
+}
+
+.subscriptions .wrapper .tier2 p
+{
+    text-align: left;
+    color:black;
+}
+
+.subscriptions p
+{
+    margin-top: 1rem;
+    margin-bottom:3rem;
+    color:wheat;
+    font-size: 1.2rem;
+}
+
+.tier_container
+{
+    max-width:900px;
+    padding:0 10px;
+    margin: 0 auto; 
+}
+
+.subscriptions img
+{
+    width:150px;
+}
+
+.subscriptions .wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6rem;
+    margin-bottom:100px;
+}
+
+.subscriptions .wrapper h2
+{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top:2rem;
+}
+
+.subscriptions .wrapper p
+{
+    margin-top:1rem;
+}
+
+.subscriptions .wrapper .tier1
+{
+    background-color: white;
+    padding:2rem 2rem;
+    position:relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.subscriptions .wrapper .tier2
+{
+    background-color: white;
+    padding:2rem 2rem;
+    position:relative;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.review
+{
+    padding: 70px 0;
+    margin-top:50px;
+    background-image: url(/images/reviewbg.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.review .WorkHeading
+{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.review .slider
+{
+    background-color: white;
+    padding:2rem;
+    border-radius: 10px;
+}
+
+.review_container
+{
+    max-width:700px;
+    padding:0 10px;
+    margin: 0 auto; 
+}
+
+.review_container h1
+{
+    color:aqua;
+}
+
+.review .slider .slide img
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:2rem;
+}
+
+.review .slider .slide
+{
+    text-align: center;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0 6rem;
+    outline:none;
+}
+
+.review .slider .slide p
+{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.review .slider .slide span
+{
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.review .slide-dots .dots
+{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+.review .slide-dots
+{
+    margin-top:2.5rem;
+}
+
+.review .slide-dots button
+{
+    font-size:0;
+    width:10px;
+    height:10px;
+    margin-right: 0.5rem;
+    border:none;
+    border-radius: 5px;
+    outline:none;
+    background-color: white;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+
+.review .slide-dots .dots li.slick-active button
+{
+    background-color: aqua;
+    width:20px;
+    height:10px;
+}
+
+.contact
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom:100px;
+}
+
+.contact .WorkHeading
+{
+    padding-top: 100px;
+}
+
+.contact .wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:4rem;
+}
+
+.contact .wrapper .card
+{
+    text-align: center;
+    color: white;
+}
+
+.contact .wrapper .card img
+{
+    width:50px;
+    margin-bottom:2rem;
+}
+
+.contact .wrapper .card h1
+{
+    font-weight: 500;
+    margin-bottom:0.5rem;
+    font-size: 1.7rem;
+}
+
+.contact .wrapper .card h6
+{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.contact .input-wrap
+{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:2rem;
+    margin-bottom:2rem;
+}
+
+.contact .input-wrap2
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.contact input
+{
+    padding:0.8rem;
+    font-size: 0.8rem;
+    background-color: black;
+    color: white;
+}
+
+.contact .input-wrap2 input
+{
+    margin-bottom:2rem;
+    font-size:0.8rem;
+    background-color: black;
+    color: white;
+}
+
+.contact .input-wrap2 textarea
+{
+    padding:0.8rem;
+    font-size:0.8rem;
+    background-color: black;
+    color:white;
+}
+
+.contact .button-wrapper
+{
+    text-align: center;
+    margin-top:2rem;
+}
+.contact .button-wrapper button a
+{
+    text-decoration: none;
+}
+
+footer
+{
+    background-color: black;
+    text-align:center;
+    padding: 3rem 0;
+}
+
+footer .footer-logo
+{
+    width:80px;
+    margin-bottom:3rem;
+}
+
+footer .footer-socials img
+{
+    width:30px;
+    margin-left:3rem;
+}
+
+footer .footer-socials a
+{
+    text-align: center;
+    margin-right:3rem;
+}
+
+footer .footer-socials
+{
+    margin-bottom: 3rem;
+}
+
+footer .copyright
+{
+    color:gray;
+}
+
+.site-main-wrapper
+{
+    position:relative;
+}
+
+.burger
+{
+    position: absolute;
+    top:20px;
+    right:20px;
+    z-index: 11;
+    background: none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    display:none;
+}
+
+.burger img
+{
+    width:30px;
+}
+
+.mobile-nav
+{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:100;
+    background-color: white;
+    width:30%;
+    height:100%;
+    padding:1rem;
+    padding-top:5rem;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.open
+{
+    transform: translateX(0);
+}
+
+.cross
+{
+    position:fixed;
+    top:30px;
+    right:30px;
+    border:none;
+    background:none;
+    outline:none;
+    cursor:pointer;
+}
+
+.cross img
+{
+    width:30px;
+}
+
+.mobile-nav ul
+{
+    list-style-type: none;
+}
+
+.mobile-nav ul li a
+{
+    color:black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media(max-width:1024px)
+{
+    body
+    {
+        background-size: cover;
+    }
+    header #main-nav
+    {
+        display:none;
+    }
+    .burger
+    {
+        display: block;
+    }
+    .intro .left img
+    {
+        width:260px;
+    }
+    .intro .right h1
+    {
+        font-size:2.5rem;
+    }
+    .intro
+    {
+        padding-top:10rem;
+    }
+    .about .aboutimg
+    {
+        height:360px;
+    }
+    .about .flex2
+    {
+        margin-left:0;
+        flex:1;
+        margin-right:30px;
+    }
+    .aboutimg
+    {
+        margin-left:30px;
+    }
+    .works .wrapper .card1
+    {
+        padding:4rem 0;
+    }
+    .subscriptions .wrapper 
+    {
+        grid-column-gap: 1rem;
+    }
+    .review
+    {
+        background-size:cover;
+    }
+}
+
+@media(max-width:576px)
+{
+    .intro
+    {
+        flex-direction:column;
+    }
+    .intro .left img
+    {
+        margin-top:-140px;
+    }
+    .intro .right h5
+    {
+        font-size: 1rem;
+        margin-top:2rem;
+    }
+    .intro .right h1
+    {
+        font-size: 1.5rem;
+        margin-bottom:0.3rem;
+    }
+    .intro .right p
+    {
+        font-size: 0.7rem;
+        margin-bottom:0.5rem;
+    }
+    .intro .mod2
+    {
+        padding:0.5rem 0.7rem;
+        margin-left:38%;
+        font-size: 0.5rem;
+    }
+    header
+    {
+        clip-path:none;
+    }
+    .about .aboutimg
+    {
+        height:200px;
+    }
+    .about .flex2
+    {
+        margin-left:0;
+        flex:2;
+        margin-right:10px;
+        font-size:0.65rem;
+    }
+    .about .flex2 h1
+    {
+        font-size: 1rem;
+    }
+    .aboutimg
+    {
+        margin-left:10px;
+    }
+    .works
+    {
+        clip-path: polygon(0 0, 50% 2%, 100% 0, 100% 100%, 0 100%);
+    }
+    .works .WorkHeading
+    {
+        margin-top:-130px;
+    }
+    .works .wrapper h2
+    {
+        font-size: 1.2rem;
+    }
+    .works .wrapper p
+    {
+        font-size:0.5rem;
+    }
+    .works .wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .works .wrapper .card1
+    {
+        margin-bottom: 3rem;
+    }
+    .works .wrapper p
+    {
+        font-size: 0.8rem;
+    }
+    .works .wrapper .card2
+    {
+        margin-bottom: 3rem;
+    }
+    .subscriptions .wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .subscriptions h1
+    {
+        font-size: 1.5rem;
+    }
+    .subscriptions .wrapper .tier1
+    {
+        padding:10px;
+        margin-bottom:3rem;
+    }
+    .subscriptions .wrapper .tier1 h2
+    {
+        font-size: 1rem;
+        margin:0;
+    }
+    .subscriptions .wrapper .tier2
+    {
+        padding:10px;
+    }
+    .subscriptions .wrapper .tier2 h2
+    {
+        font-size: 1rem;
+        margin-top:0;
+    }
+    .subscriptions .wrapper .tier1 p
+    {
+        font-size: 1rem;
+        margin:2rem 0;
+    }
+    .subscriptions .wrapper .tier2 p
+    {
+        font-size: 1rem;
+        margin:2rem 0;
+    }
+    .subscriptions .wrapper .tier2
+    {
+        padding:10px;
+    }
+    .review .slider .slide
+    {
+        padding:0;
+        text-align: center;
+    }
+    .contact
+    {
+        padding-bottom: 50px;
+    }
+    .contact .wrapper
+    {
+        grid-gap: 0;
+    }    
+    .contact .wrapper .card h1
+    {
+        font-size: 1rem;
+    }
+    .contact .wrapper .card h6
+    {
+        font-size: 0.7rem;
+    }
+    .contact .input-wrap
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .footer-socials
+    {
+        margin-left:50px;
+    }
+    footer .footer-socials img
+    {
+        margin:0;
+    }
+    .mobile-nav ul li a
+    {
+        font-size: 1rem;
+        color:white;
+    }
+    .mobile-nav ul
+    {
+        line-height: 3;
+        margin-left:1rem;
+    }
+    .mobile-nav
+    {
+        background-image: url(/images/workbg.png);
+    }
+}
+
+@media (min-width:576px)
+{
+    .container
+    {
+        max-width:540px;
+    }
+}
+
+@media (min-width:768px)
+{
+    .container
+    {
+        max-width:720px;
+    }
+}
+
+@media (min-width:992px)
+{
+    .container
+    {
+        max-width:960px;
+    }
+}
+
+@media (min-width:1200px)
+{
+    .container
+    {
+        max-width:1152px;
+    }
+}
